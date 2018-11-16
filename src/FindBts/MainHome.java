@@ -136,7 +136,7 @@ import java.sql.*;
 
         }
 
-        
+
 
         private void deleteInfo(){
             int ro=0;
