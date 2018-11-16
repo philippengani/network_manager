@@ -136,6 +136,8 @@ import java.sql.*;
 
         }
 
+        
+
         private void deleteInfo(){
             int ro=0;
             double latitude = Double.parseDouble(latitude1.getText());
