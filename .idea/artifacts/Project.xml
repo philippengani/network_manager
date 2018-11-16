@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="Project">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project</output-path>
+    <root id="root">
+      <element id="library" level="project" name="fontawesomefx-8.9" />
+      <element id="library" level="project" name="jfoenix-8.0.7" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.47" />
+      <element id="archive" name="FannyProject.jar">
+        <element id="module-output" name="NetworkManager" />
+      </element>
+    </root>
+  </artifact>
+</component>
