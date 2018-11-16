@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1314.0" style="-fx-background-color: #f1f8e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FindBts.Home">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="1334.0" style="-fx-background-color: #a5d6a7;">
+         <children>
+            <JFXButton fx:id="enodeb_tab" onAction="#handleButton" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #c5e1a5;" text="eNodeB">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="47.0">
+                     <image>
+                        <Image url="@images/antenna.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="switch_tab" layoutX="193.0" onAction="#handleButton" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #c4e0a4;" text="A.Switch">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="68.0">
+                     <image>
+                        <Image url="@images/swi.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cswitch_tab" layoutX="386.0" onAction="#handleButton" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #c4e0a4;" text="Crucial Switch" textFill="#1b03ee">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="hq_tab" layoutX="579.0" onAction="#handleButton" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #c4e0a4;" text="HQ" textFill="#1440e1">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="57.0" prefHeight="473.0" prefWidth="770.0">
+         <children>
+            <Pane fx:id="switch_pane" prefHeight="708.0" prefWidth="1314.0" style="-fx-background-color: #e6ee9c;">
+               <children>
+                  <JFXButton fx:id="s1" layoutX="83.0" layoutY="98.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="147.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s2" layoutX="222.0" layoutY="234.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s3" layoutX="452.0" layoutY="412.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s4" layoutX="398.0" layoutY="611.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="177.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s5" layoutX="134.0" layoutY="567.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="147.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s6" layoutX="301.0" layoutY="478.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s7" layoutX="561.0" layoutY="69.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="177.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s8" layoutX="549.0" layoutY="284.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s9" layoutX="201.0" layoutY="354.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s10" layoutX="423.0" layoutY="183.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="177.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s11" layoutX="32.0" layoutY="255.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="147.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s12" layoutX="332.0" layoutY="29.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="s13" layoutX="26.0" layoutY="431.0" onAction="#handleSwitch" prefHeight="58.0" prefWidth="160.0" text="A.Switch">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <AnchorPane fx:id="param1" layoutX="738.0" layoutY="8.0" prefHeight="696.0" prefWidth="534.0" style="-fx-background-color: #EFEBE9; -fx-background-radius: 20px;">
+                     <children>
+                        <Label fx:id="paramTitle1" layoutX="103.0" layoutY="14.0" prefHeight="38.0" prefWidth="329.0" style="-fx-text-fill: #795548; -fx-alignment: center; -fx-font-size: 15px; -fx-font-weight: bold;" text="N/A" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle11" layoutX="54.0" layoutY="91.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Latitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle111" layoutX="54.0" layoutY="145.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Longitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1111" layoutX="54.0" layoutY="195.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Capacity" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle11111" layoutX="17.0" layoutY="241.0" prefHeight="24.0" prefWidth="147.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="ADM-SDH Location" textAlignment="CENTER" />
+                        <Label fx:id="sLat" contentDisplay="TOP" layoutX="206.0" layoutY="84.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" />
+                        <Label fx:id="sLon" layoutX="208.0" layoutY="131.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                        <Label fx:id="sCap" layoutX="208.0" layoutY="181.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                        <Label fx:id="sAdm" layoutX="208.0" layoutY="227.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle111111" layoutX="34.0" layoutY="290.0" prefHeight="24.0" prefWidth="119.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Interface and ports" textAlignment="CENTER" />
+                        <Label fx:id="sInt" layoutX="158.0" layoutY="283.0" prefHeight="38.0" prefWidth="371.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1111111" layoutX="31.0" layoutY="351.0" prefHeight="24.0" prefWidth="119.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Aggregated eNode" textAlignment="CENTER" />
+                        <Label fx:id="sNode" layoutX="194.0" layoutY="353.0" prefWidth="303.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="JUSTIFY" />
+                     </children>
+                  </AnchorPane>
+               </children></Pane>
+            <Pane fx:id="enodeb_pane" prefHeight="708.0" prefWidth="1314.0" style="-fx-background-color: #ffcc80;">
+               <children>
+                  <JFXButton fx:id="e1" layoutX="66.0" layoutY="79.0" onAction="#handleEnodeb" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="47.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e2" layoutX="29.0" layoutY="228.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="48.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e3" layoutX="277.0" layoutY="261.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e4" layoutX="29.0" layoutY="404.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e5" layoutX="381.0" layoutY="623.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="43.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e6" layoutX="266.0" layoutY="37.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="42.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e7" layoutX="144.0" layoutY="171.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="47.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e8" layoutX="66.0" layoutY="516.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="48.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e9" layoutX="45.0" layoutY="627.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="43.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e10" layoutX="463.0" layoutY="507.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e11" layoutX="519.0" layoutY="72.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e12" layoutX="430.0" layoutY="193.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e13" layoutX="415.0" layoutY="330.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="41.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e14" layoutX="401.0" layoutY="424.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="41.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e15" layoutX="557.0" layoutY="590.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e16" layoutX="668.0" layoutY="121.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e17" layoutX="647.0" layoutY="284.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e18" layoutX="768.0" layoutY="601.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e19" layoutX="587.0" layoutY="194.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e20" layoutX="265.0" layoutY="530.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e21" layoutX="247.0" layoutY="398.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e22" layoutX="647.0" layoutY="455.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e23" layoutX="668.0" layoutY="14.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e24" layoutX="301.0" layoutY="130.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="e25" layoutX="166.0" layoutY="321.0" onAction="#handleEnodeb" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0">
+                           <image>
+                              <Image url="@images/bts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <AnchorPane fx:id="param" layoutX="831.0" layoutY="149.0" prefHeight="362.0" prefWidth="412.0" style="-fx-background-color: #EFEBE9; -fx-background-radius: 20px;">
+                     <children>
+                        <Label fx:id="paramTitle" layoutX="69.0" layoutY="14.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle12" layoutX="54.0" layoutY="91.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Latitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle112" layoutX="54.0" layoutY="145.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Longitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1112" layoutX="54.0" layoutY="195.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Capacity" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle11112" layoutX="54.0" layoutY="241.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="ADM-SDH" textAlignment="CENTER" />
+                        <Label fx:id="eLat" layoutX="152.0" layoutY="88.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="eLon" layoutX="152.0" layoutY="140.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="eCap" layoutX="152.0" layoutY="190.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="eAdmSdh" layoutX="152.0" layoutY="236.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label layoutX="28.0" layoutY="283.0" prefHeight="24.0" prefWidth="119.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Interface and ports" textAlignment="CENTER" />
+                        <Label fx:id="eInt" layoutX="163.0" layoutY="276.0" prefHeight="38.0" prefWidth="243.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="cswitch_pane" prefHeight="718.0" prefWidth="1324.0" style="-fx-background-color: #fff3e0;">
+               <children>
+                  <JFXButton fx:id="cs1" layoutX="66.0" layoutY="79.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs2" layoutX="640.0" layoutY="545.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs3" layoutX="314.0" layoutY="574.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs4" layoutX="36.0" layoutY="293.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="211.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs5" layoutX="272.0" layoutY="207.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs6" layoutX="526.0" layoutY="359.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs7" layoutX="36.0" layoutY="516.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs8" layoutX="246.0" layoutY="417.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs9" layoutX="572.0" layoutY="196.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cs10" layoutX="323.0" layoutY="50.0" onAction="#handleCSwitch" prefHeight="58.0" prefWidth="136.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="46.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <AnchorPane fx:id="param2" layoutX="831.0" layoutY="99.0" prefHeight="546.0" prefWidth="446.0" style="-fx-background-color: #EFEBE9; -fx-background-radius: 20px;">
+                     <children>
+                        <Label fx:id="paramTitle2" layoutX="69.0" layoutY="14.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle121" layoutX="54.0" layoutY="91.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Latitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1121" layoutX="54.0" layoutY="145.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Longitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle11121" layoutX="54.0" layoutY="195.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Capacity" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle111121" layoutX="54.0" layoutY="336.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="ADM-SDH" textAlignment="CENTER" />
+                        <Label fx:id="csLat" layoutX="152.0" layoutY="88.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="csLon" layoutX="152.0" layoutY="140.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="csCap" layoutX="152.0" layoutY="190.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="csAdm" layoutX="152.0" layoutY="318.0" prefHeight="102.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label layoutX="24.0" layoutY="261.0" prefHeight="24.0" prefWidth="119.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Interface and ports" textAlignment="CENTER" />
+                        <Label fx:id="csInt" layoutX="159.0" layoutY="254.0" prefHeight="38.0" prefWidth="243.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="hq_pane" prefHeight="728.0" prefWidth="1334.0" style="-fx-background-color: #fff3e0;">
+               <children>
+                  <JFXButton fx:id="h1" layoutX="56.0" layoutY="122.0" onAction="#handleHQ" prefHeight="115.0" prefWidth="281.0" text="ghtjfglkjm%">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="101.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane fx:id="param3" layoutX="783.0" layoutY="56.0" prefHeight="589.0" prefWidth="526.0" style="-fx-background-color: #EFEBE9; -fx-background-radius: 20px;">
+                     <children>
+                        <Label fx:id="paramTitle3" layoutX="69.0" layoutY="14.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1211" layoutX="54.0" layoutY="91.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Latitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle11211" layoutX="54.0" layoutY="145.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Longitude" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle111211" layoutX="54.0" layoutY="195.0" prefHeight="24.0" prefWidth="66.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Capacity" textAlignment="CENTER" />
+                        <Label fx:id="paramTitle1111211" layoutX="24.0" layoutY="336.0" prefHeight="24.0" prefWidth="136.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Aggregated ADM-SDH" textAlignment="CENTER" />
+                        <Label fx:id="hLat" layoutX="152.0" layoutY="88.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="hLon" layoutX="152.0" layoutY="140.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="hCap" layoutX="152.0" layoutY="190.0" prefHeight="38.0" prefWidth="274.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label fx:id="hAdm" layoutX="152.0" layoutY="318.0" prefHeight="102.0" prefWidth="361.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="hmmmm" textAlignment="CENTER" />
+                        <Label layoutX="24.0" layoutY="261.0" prefHeight="24.0" prefWidth="119.0" style="-fx-text-fill: #1565C0; -fx-alignment: center; -fx-font-size: 12px;" text="Interface and ports" textAlignment="CENTER" />
+                        <Label fx:id="hInt" layoutX="159.0" layoutY="254.0" prefHeight="38.0" prefWidth="361.0" style="-fx-text-fill: black; -fx-alignment: center; -fx-font-size: 15px;" text="N/A" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="h2" layoutX="439.0" layoutY="483.0" onAction="#handleHQ" prefHeight="115.0" prefWidth="281.0" text="ghtjfglkjm%">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="101.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="h3" layoutX="505.0" layoutY="48.0" onAction="#handleHQ" prefHeight="115.0" prefWidth="281.0" text="ghtjfglkjm%">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="101.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="h4" layoutX="28.0" layoutY="461.0" onAction="#handleHQ" prefHeight="115.0" prefWidth="281.0" text="ghtjfglkjm%">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="101.0">
+                           <image>
+                              <Image url="@images/atm%20switch.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

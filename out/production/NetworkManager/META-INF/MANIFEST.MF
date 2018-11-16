@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: fontawesomefx-8.9.jar jfoenix-8.0.7.jar mysql-connector-ja
+ va-5.1.47
+Main-Class: FindBts.Main
+
