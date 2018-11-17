@@ -1,5 +1,6 @@
 package FindBts;
 
+import FindBts.helpers.Calculations;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -483,7 +484,7 @@ public class Home implements Initializable {
     private String intPort(Double cap){
         String intPo="N/A";
         if (cap<500){
-            int p=Calculations.fetchPortNumber(cap);
+            int p= Calculations.fetchPortNumber(cap);
             intPo= p +" Fast-Ethernet port";
         }
         else {

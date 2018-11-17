@@ -1,25 +1,17 @@
 package FindBts;
+import FindBts.tableClasses.EnodeB;
 import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.*;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.Text;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
-import FindBts.helpers.Dialog;
+
 import java.io.IOException;
-import java.net.URL;
 import java.sql.SQLException;
 import static FindBts.Connecti.conn;
 import static FindBts.helpers.Dialog.showDialog;

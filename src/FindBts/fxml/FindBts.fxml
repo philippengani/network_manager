@@ -18,7 +18,7 @@
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="31.0">
                      <image>
-                        <Image url="@images/search3.png" />
+                        <Image url="@../images/search3.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -27,7 +27,7 @@
                <graphic>
                   <ImageView fitHeight="22.0" fitWidth="28.0">
                      <image>
-                        <Image url="@images/home3.png" />
+                        <Image url="@../images/home3.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -36,7 +36,7 @@
                <graphic>
                   <ImageView>
                      <image>
-                        <Image url="@images/network.png" />
+                        <Image url="@../images/network.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -45,7 +45,7 @@
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="25.0">
                      <image>
-                        <Image url="@images/account.png" />
+                        <Image url="@../images/account.png" />
                      </image>
                   </ImageView>
                </graphic>

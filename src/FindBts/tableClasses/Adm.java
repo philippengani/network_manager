@@ -1,4 +1,4 @@
-package FindBts;
+package FindBts.tableClasses;
 
 public class Adm {
     private int id;

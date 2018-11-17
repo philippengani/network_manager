@@ -1,8 +1,8 @@
-package FindBts;
+package FindBts.helpers;
 
-class Calculations {
+public class Calculations {
 
-    static int fetchPortNumber(double ca){
+   public  static int fetchPortNumber(double ca){
         int b=0;
         if((ca % 100)==0){
             int a=(int)(ca/100);
@@ -23,7 +23,7 @@ class Calculations {
         }
         return b;
     }
-    static String gigaIntPort(double ca){
+   public  static String gigaIntPort(double ca){
         String intPo="";
 
         double a=ca/1000;

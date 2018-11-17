@@ -1,21 +1,20 @@
 package FindBts;
 
-import com.jfoenix.controls.JFXButton;
+import FindBts.helpers.Calculations;
+import FindBts.tableClasses.Adm;
+import FindBts.tableClasses.Result;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
-import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 
 import static FindBts.Connecti.conn;
@@ -163,7 +162,7 @@ public class Search implements Initializable {
                 double cap = Double.parseDouble(capacity.replace("Mbps",""));
                 if (cap<=500){
                     switch_needed = "Fast-Ethernet only";
-                    port_needed=Calculations.fetchPortNumber(cap);
+                    port_needed= Calculations.fetchPortNumber(cap);
                     parts="0:"+port_needed;
 
                 }else {

@@ -16,7 +16,7 @@
                <graphic>
                   <ImageView fitHeight="37.0" fitWidth="47.0">
                      <image>
-                        <Image url="@images/antenna.png" />
+                        <Image url="@../images/antenna.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -25,7 +25,7 @@
                <graphic>
                   <ImageView fitHeight="47.0" fitWidth="68.0">
                      <image>
-                        <Image url="@images/swi.jpg" />
+                        <Image url="@../images/swi.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -187,7 +187,7 @@
                      <graphic>
                         <ImageView fitHeight="43.0" fitWidth="47.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -196,7 +196,7 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="48.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -205,7 +205,7 @@
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="40.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -214,7 +214,7 @@
                      <graphic>
                         <ImageView fitHeight="36.0" fitWidth="40.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -223,7 +223,7 @@
                      <graphic>
                         <ImageView fitHeight="39.0" fitWidth="43.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -232,7 +232,7 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="42.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -241,7 +241,7 @@
                      <graphic>
                         <ImageView fitHeight="38.0" fitWidth="47.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -250,7 +250,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="48.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -259,7 +259,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="43.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -268,7 +268,7 @@
                      <graphic>
                         <ImageView fitHeight="41.0" fitWidth="40.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -277,7 +277,7 @@
                      <graphic>
                         <ImageView fitHeight="41.0" fitWidth="40.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -286,7 +286,7 @@
                      <graphic>
                         <ImageView fitHeight="38.0" fitWidth="40.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -295,7 +295,7 @@
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="41.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -304,7 +304,7 @@
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="41.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -313,7 +313,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -322,7 +322,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -331,7 +331,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -340,7 +340,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -349,7 +349,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -358,7 +358,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -367,7 +367,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -376,7 +376,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -385,7 +385,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -394,7 +394,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -403,7 +403,7 @@
                      <graphic>
                         <ImageView fitHeight="45.0" fitWidth="44.0">
                            <image>
-                              <Image url="@images/bts.png" />
+                              <Image url="@../images/bts.png" />
                            </image>
                         </ImageView>
                      </graphic>

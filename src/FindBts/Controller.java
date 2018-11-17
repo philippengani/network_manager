@@ -1,5 +1,9 @@
 package FindBts;
 
+import FindBts.helpers.Calculations;
+import FindBts.tableClasses.Adm;
+import FindBts.tableClasses.EnodeB;
+import FindBts.tableClasses.Result;
 import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,7 +11,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -16,12 +19,13 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
 import static FindBts.Connecti.conn;
-import static FindBts.Connecti.connect;
+import static FindBts.Login.status;
 
 public class Controller implements Initializable {
     public JFXButton search_page;
@@ -87,13 +91,13 @@ public class Controller implements Initializable {
     private void handleButtonAction(ActionEvent event) throws IOException {
         if (event.getSource()==search_page){
             System.out.println("search ");
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("Search.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxml/Search.fxml"));
             rootPane.getChildren().setAll(pane);
 
         }
         else  if (event.getSource()==home_page){
             System.out.println("home");
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("MainHome.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxml/MainHome.fxml"));
             rootPane.getChildren().setAll(pane);
 
         }
@@ -102,11 +106,11 @@ public class Controller implements Initializable {
             searchHome();
         }
         else if(event.getSource()==home_page1){
-             AnchorPane pane = FXMLLoader.load(getClass().getResource("home.fxml"));
+             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxml/home.fxml"));
             rootPane.getChildren().setAll(pane);
         }
         else if (event.getSource()==account){
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("Account.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxml/Account.fxml"));
             rootPane.getChildren().setAll(pane);
         }
 
@@ -120,6 +124,10 @@ public class Controller implements Initializable {
         data = FXCollections.observableArrayList();
         setCellTable();
         loadData();
+        if(status.equals("not admin")){
+            account.setVisible(false);
+        }
+
 
     }
     // now for displaying the adm table from the database
@@ -226,7 +234,7 @@ public class Controller implements Initializable {
                 double cap = Double.parseDouble(capacity.replace("Mbps",""));
                 if (cap<=500){
                     switch_needed = "Fast-Ethernet only";
-                    port_needed=Calculations.fetchPortNumber(cap);
+                    port_needed= Calculations.fetchPortNumber(cap);
                      parts="0:"+port_needed;
 
                 }else {

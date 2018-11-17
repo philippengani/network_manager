@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
@@ -24,6 +23,7 @@ public class Login {
     public Label lblerrors;
     PreparedStatement pst;
     ResultSet res;
+    public static String status=null;
 
 
     public void handleButton(ActionEvent event){
@@ -35,7 +35,7 @@ public class Login {
                     Node node = (Node) event.getSource();
                     Stage stage =(Stage)node.getScene().getWindow();
                     stage.close();
-                    Scene scene =new Scene(FXMLLoader.load(getClass().getResource("FindBts.fxml")));
+                    Scene scene =new Scene(FXMLLoader.load(getClass().getResource("fxml/FindBts.fxml")));
                     stage.setMaximized(true);
                     stage.setTitle("Network Manager");
                     stage.setScene(scene);
@@ -49,6 +49,7 @@ public class Login {
     }
 
     private String logIn(){
+
         String email= txtEmail.getText();
         String password = txtPassword.getText();
         String sql = "SELECT * FROM user WHERE email=? and password=?";
@@ -64,6 +65,14 @@ public class Login {
                 return "Error";
             }
             else{
+                String s=res.getString(6);
+                if (s.equals("simple user")){
+                    status = "not admin";
+
+                }
+                else{
+                    status="admin";
+                }
                 lblerrors.setTextFill(Color.GREEN);
                 lblerrors.setText("Login Successful .. Redirecting...");
                 return "Success";

@@ -1,16 +1,21 @@
 package FindBts;
 
+import FindBts.tableClasses.User;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.*;
+
 import static FindBts.Connecti.conn;
 import static FindBts.helpers.Dialog.showDialog;
 
 import FindBts.helpers.Dialog;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Pane;
 
 import java.net.URL;
 import java.sql.PreparedStatement;
@@ -20,13 +25,23 @@ import java.util.ResourceBundle;
 
 public class Account implements Initializable{
     public ComboBox<String> txtStatus;
-    public ObservableList<String> txt= FXCollections.observableArrayList("Normal user","admin");
-    public JFXButton addBtn;
+    private ObservableList<String> txt= FXCollections.observableArrayList("simple user","admin");
+    public JFXButton addBtn,btnList,btnAdd;
     public JFXTextField txtName,txtSurname,txtPassword,txtEmail;
+    public Pane listPane,addPane;
+
+    public TableView<User> tableUsers;
+    @FXML
+    private TableColumn<User, String> col_id,col_name,col_surname,col_email,col_password,col_status;
+    @FXML
+    private TableColumn<User, Button> col_update;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtStatus.setItems(txt);
+        listPane.toFront();
+        addPane.toBack();
+        initTable();
     }
     public void handleButton(ActionEvent event){
         if (event.getSource()==addBtn){
@@ -38,7 +53,41 @@ public class Account implements Initializable{
             insertUser(name,surname,email,password,status);
             emptyFields();
         }
+        else if (event.getSource()==btnList) listPane.toFront();
+        else if (event.getSource()==btnAdd) addPane.toFront();
     }
+
+    private void initTable(){
+        initColumns();
+    }
+    private void initColumns(){
+
+        col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("name"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("surname"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("email"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("password"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("status"));
+        col_id.setCellValueFactory(new PropertyValueFactory<>("update"));
+
+    }
+    // This one is used to make the columns editable
+    private void editableCols(){
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void insertUser(String name, String surname, String email, String password, String status) {
         Connecti.connect();
@@ -56,6 +105,7 @@ public class Account implements Initializable{
             }
             else {
                 showDialog("Success",null,"User Created");
+
 
             }
         } catch (SQLException e) {
