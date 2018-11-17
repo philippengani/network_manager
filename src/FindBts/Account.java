@@ -32,7 +32,7 @@ public class Account implements Initializable{
 
     public TableView<User> tableUsers;
     @FXML
-    private TableColumn<User, String> col_id,col_name,col_surname,col_email,col_password,col_status;
+    private TableColumn<User, String> col_id,col_name,col_surname,col_email,col_password,col_status,col_select;
     @FXML
     private TableColumn<User, Button> col_update;
 
@@ -63,12 +63,14 @@ public class Account implements Initializable{
     private void initColumns(){
 
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("name"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("surname"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("email"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("password"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("status"));
-        col_id.setCellValueFactory(new PropertyValueFactory<>("update"));
+        col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        col_surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
+        col_email.setCellValueFactory(new PropertyValueFactory<>("email"));
+        col_password.setCellValueFactory(new PropertyValueFactory<>("password"));
+        col_status.setCellValueFactory(new PropertyValueFactory<>("status"));
+        col_select.setCellValueFactory(new PropertyValueFactory<>("select"));
+        col_update.setCellValueFactory(new PropertyValueFactory<>("update"));
+
 
     }
     // This one is used to make the columns editable

@@ -1,14 +1,16 @@
 package FindBts.tableClasses;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 
 public class User {
 
    private int id;
    private  String name,surname,email,password,status;
    private Button update;
+   private CheckBox select;
 
-    public User(int id, String name, String surname, String email, String password, String status, Button update) {
+    public User(int id, String name, String surname, String email, String password, String status, Button update, CheckBox select) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -16,6 +18,15 @@ public class User {
         this.password = password;
         this.status = status;
         this.update = update;
+        this.select = select;
+    }
+
+    public CheckBox getSelect() {
+        return select;
+    }
+
+    public void setSelect(CheckBox select) {
+        this.select = select;
     }
 
     public int getId() {

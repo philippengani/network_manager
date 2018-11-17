@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FindBts.Login">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="337.0" style="-fx-background-color: #ffca28;">
+         <children>
+            <Label layoutX="72.0" layoutY="266.0" text="Network Manager" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="301.0" text="Search,monitor and manage the network" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="140.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-network-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnSignin" layoutX="490.0" layoutY="306.0" onAction="#handleButton" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #3291D1;" text="Sign in">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView layoutX="365.0" layoutY="29.0">
+         <image>
+            <Image url="@../images/manager.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblerrors" alignment="CENTER" layoutX="420.0" layoutY="250.0" prefHeight="17.0" prefWidth="273.0" textAlignment="CENTER" textFill="#f20808">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmail" focusColor="#ffca28" layoutX="432.0" layoutY="145.0" prefHeight="25.0" prefWidth="228.0" promptText="email" />
+      <JFXPasswordField fx:id="txtPassword" focusColor="#ffca28" layoutX="432.0" layoutY="217.0" prefHeight="25.0" prefWidth="228.0" promptText="password" />
+   </children>
+</AnchorPane>
