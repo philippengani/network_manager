@@ -7,17 +7,15 @@ public class User {
 
    private int id;
    private  String name,surname,email,password,status;
-   private Button update;
    private CheckBox select;
 
-    public User(int id, String name, String surname, String email, String password, String status, Button update, CheckBox select) {
+    public User(int id, String name, String surname, String email, String password, String status, CheckBox select) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
         this.status = status;
-        this.update = update;
         this.select = select;
     }
 
@@ -77,11 +75,5 @@ public class User {
         this.status = status;
     }
 
-    public Button getUpdate() {
-        return update;
-    }
 
-    public void setUpdate(Button update) {
-        this.update = update;
-    }
 }

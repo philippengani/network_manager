@@ -30,24 +30,62 @@ public class Login {
         if(event.getSource()==btnSignin){
             //Login
             if (logIn().equals("Success")){
-
+                int a=2;
+                Connecti.connect();
+                String sql ="SELECT `initialised` FROM `software` WHERE 1";
                 try {
-                    Node node = (Node) event.getSource();
-                    Stage stage =(Stage)node.getScene().getWindow();
-                    stage.close();
-                    Scene scene =new Scene(FXMLLoader.load(getClass().getResource("fxml/FindBts.fxml")));
-                    stage.setMaximized(true);
-                    stage.setTitle("Network Manager");
-                    stage.setScene(scene);
-                    stage.show();
-                } catch (IOException e) {
+                    pst = conn.prepareStatement(sql);
+                    res = pst.executeQuery();
+                    while(res.next()){
+                        a=res.getInt(1);
+                    }
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
+                if (a == 0){
+                    gotoSoft(event,"not");
+                }
+                else {
+                    gotoSoft(event,"ini");
+                }
+
+
 
             }
         }
     }
 
+    private void gotoSoft(ActionEvent event,String act){
+
+        if (act.equals("not")){
+            try {
+                Node node = (Node) event.getSource();
+                Stage stage =(Stage)node.getScene().getWindow();
+                stage.close();
+                Scene scene =new Scene(FXMLLoader.load(getClass().getResource("fxml/Import.fxml")));
+                stage.setTitle("Network Manager");
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else if (act.equals("ini")){
+            try {
+                Node node = (Node) event.getSource();
+                Stage stage =(Stage)node.getScene().getWindow();
+                stage.close();
+                Scene scene =new Scene(FXMLLoader.load(getClass().getResource("fxml/FindBts.fxml")));
+                stage.setMaximized(true);
+                stage.setTitle("Network Manager");
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
     private String logIn(){
 
         String email= txtEmail.getText();
