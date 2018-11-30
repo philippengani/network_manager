@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FindBts.Import">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="273.0" style="-fx-background-color: #ffca28;">
+         <children>
+            <Label layoutX="41.0" layoutY="208.0" text="Network Manager" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="250.0" text="Search,monitor and manage the network" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="108.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-network-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lblerrors" alignment="CENTER" layoutX="420.0" layoutY="250.0" prefHeight="17.0" prefWidth="273.0" textAlignment="CENTER" textFill="#f20808">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblerrors1" alignment="CENTER" layoutX="287.0" layoutY="50.0" prefHeight="45.0" prefWidth="459.0" text="First importation of data used in the software." textAlignment="CENTER" textFill="#282727">
+         <font>
+            <Font name="Gill Sans MT" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="95.0" text=" This will be done just once">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="182.0" text="eNodeB" />
+      <Label layoutX="339.0" layoutY="229.0" text="ADM" />
+      <Label layoutX="331.0" layoutY="268.0" text="Crucial Switch" />
+      <JFXButton fx:id="browseEno" layoutX="625.0" layoutY="178.0" onAction="#handleButton" style="-fx-background-color: #ffca28;" text="Browse" />
+      <JFXButton fx:id="browseAdm" layoutX="625.0" layoutY="225.0" onAction="#handleButton" style="-fx-background-color: #ffca28;" text="Browse" />
+      <JFXButton fx:id="browseCru" layoutX="625.0" layoutY="264.0" onAction="#handleButton" style="-fx-background-color: #ffca28;" text="Browse" />
+      <JFXButton fx:id="importCsv" layoutX="489.0" layoutY="329.0" onAction="#handleButton" style="-fx-background-color: #ffca28;" text="Import" />
+      <JFXButton fx:id="goSoft" layoutX="632.0" layoutY="461.0" onAction="#handleButton" style="-fx-background-color: blue;" text="Proceed to software" textFill="WHITE" />
+      <JFXTextField fx:id="AText" layoutX="458.0" layoutY="217.0" />
+      <JFXTextField fx:id="EText" layoutX="458.0" layoutY="178.0" />
+      <JFXTextField fx:id="CText" layoutX="458.0" layoutY="264.0" />
+   </children>
+</AnchorPane>
